@@ -259,6 +259,19 @@ a:hover {
 
 @media screen and (max-width: 480px) {
     body {
-        background-size: auto 1000px;
+        background-size: auto 800px;
     }
+    h1 {
+    font: 1.6em Rajdhani, "Noto Sans JP";
+    color: rgb(181, 242, 252);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    padding: 0.4em;
+}
+
+h2 {
+    font-size: 1.1em;
+    padding-left: 0.3em;
+    border-left: solid 0.5em darkgray;
+    text-align: left;
+}
 } 
