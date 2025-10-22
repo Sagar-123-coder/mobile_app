@@ -269,11 +269,15 @@ a:hover {
     }
 
     h1 {
-        font: 1.6em Rajdhani, "Noto Sans JP";
+        font: 1.3em Rajdhani, "Noto Sans JP";
         color: rgb(181, 242, 252);
-        background-image: radial-gradient(circle 180px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
-        padding: 0.4em;
+        background-image: radial-gradient(circle 160px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+        padding: 0.3em 0.5em;
         border-radius: 0.5em;
+        white-space: nowrap;            /* keep in one line */
+        overflow: hidden;               /* prevent text from spilling */
+        text-overflow: ellipsis;        /* adds "..." if too long */
+        text-align: center;
     }
 
     h2 {
@@ -300,9 +304,9 @@ a:hover {
 
     .item01,
     .item02 {
-        width: 22%;      /* Two per row */
+        width: 22%;      
         height: auto;
-        opacity: 0;      /* Always visible for mobile */
+        opacity: 0;     
     }
 
     .item01 img,
@@ -310,6 +314,9 @@ a:hover {
         width: 100%;
         height: auto;
         border-radius: 0.5em;
+    }
+    header{
+
     }
 
     .item01 ,
