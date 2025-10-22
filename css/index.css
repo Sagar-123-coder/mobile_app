@@ -258,20 +258,76 @@ a:hover {
 /*******************************************************/
 
 @media screen and (max-width: 480px) {
-    body {
-        background-size: auto 800px;
+    html {
+        font-size: 55%; /* Slightly smaller base font */
     }
-    h1 {
-    font: 1.6em Rajdhani, "Noto Sans JP";
-    color: rgb(181, 242, 252);
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
-    padding: 0.4em;
-}
 
-h2 {
-    font-size: 1.1em;
-    padding-left: 0.3em;
-    border-left: solid 0.5em darkgray;
-    text-align: left;
+    body {
+        background-size: cover;
+        background-position: center;
+        padding: 0.5em;
+    }
+
+    h1 {
+        font: 1.6em Rajdhani, "Noto Sans JP";
+        color: rgb(181, 242, 252);
+        background-image: radial-gradient(circle 180px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+        padding: 0.4em;
+        border-radius: 0.5em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+        padding-left: 0.3em;
+        border-left: solid 0.4em darkgray;
+    }
+
+    .container01 {
+        width: 95%;
+        padding: 1em;
+        border-radius: 0.8em;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container01-01,
+    .container01-02,
+    .container01-03,
+    .container01-04 {
+        justify-content: center;
+        gap: 0.8em;
+    }
+
+    .item01,
+    .item02 {
+        width: 22%;      /* Two per row */
+        height: auto;
+        opacity: 1;      /* Always visible for mobile */
+    }
+
+    .item01 img,
+    .item02 img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5em;
+    }
+
+    .item01 ,
+    .item02  {
+        font-size: 1em;
+        opacity: 0;
+    }
+    
+
+    footer>p {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0.8em 0;
+        font: 1em 'Rajdhani', sans-serif;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.4);
+    }
 }
-} 
+    
