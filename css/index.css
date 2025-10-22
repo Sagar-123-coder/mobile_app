@@ -302,7 +302,7 @@ a:hover {
     .item02 {
         width: 22%;      /* Two per row */
         height: auto;
-        opacity: 1;      /* Always visible for mobile */
+        opacity: 0;      /* Always visible for mobile */
     }
 
     .item01 img,
