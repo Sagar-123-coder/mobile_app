@@ -43,35 +43,21 @@ header {
     padding-bottom: 23px;
     text-align: center;
 }
-.back {
-    text-align: left;
-    padding: 1em;
-}
 
-#btn99 {
-    padding: 0.6em 1.2em;
-    border: none;
-    border-radius: 0.5em;
-    color: #ffffff;
-    font-size: 1.5em;
-    font-weight: bold;
-    background: linear-gradient(135deg, #1ad4d4, #108ca0);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+#btn1 {
+    position: relative;
+    margin: 20px auto;
+    width: 200px;
+    height: 400px;
+    background-image: url(../image/omikuji.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    user-select: none;
     cursor: pointer;
-    transition: all 0.3s ease;
-    letter-spacing: 0.05em;
 }
 
-#btn99:hover {
-    background: linear-gradient(135deg, #0fbcbf, #0a768a);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-    opacity: 0.95;
-}
-
-#btn99:active {
-    transform: scale(0.97);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+#btn1:hover {
+    animation: shaking 0.3s infinite;
 }
 
 @keyframes shaking {
@@ -104,6 +90,36 @@ header {
     font-weight: 800;
     text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.65);
     transition: 1s;
+}
+.back {
+    text-align: left;
+    padding: 1em;
+}
+
+#btn99 {
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 0.5em;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #1ad4d4, #108ca0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.05em;
+}
+
+#btn99:hover {
+    background: linear-gradient(135deg, #0fbcbf, #0a768a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    opacity: 0.95;
+}
+
+#btn99:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -190,15 +206,4 @@ footer {
     #omikujiText {
         margin: 0;
     }
-}
-.back{
-    text-align: left;
-}
-#btn99{
-padding: 0.5em;
-border-radius: 0.3em;
-color: whitesmoke;
-font-size: 1.5em;
-background: rgb(26, 212, 212);
-cursor: pointer; /*カーソルをポインターの形（かたち）にする*/
 }
