@@ -65,6 +65,7 @@ reset.addEventListener("click",
     stopTime = 0;
     soundReset.play();
     document.body.style.backgroundImage = "none";
+    document.body.style.backgroundColor = "rgba(233, 168, 227, 0.6)";
   },false
 );
 
